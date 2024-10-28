@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Thực hành Web</title>
+  </head>
+  <body style="height: 10000px">
+    <!-- header -->
+    <header class="header fixed">
+      <div class="main-content">
+        <div class="body-header">
+          <!-- logo -->
+          <div class="chua-logo">
+            <img
+              src="./assets/icon/logo.svg"
+              alt="Lesson"
+              class="logo"
+              height="50px"
+              width="50px"
+            />
+            <span>BaDuTr</span>
+          </div>
+          <!-- nav -->
+          <div class="chua-nav">
+            <nav class="nav">
+              <div class="tim-kiem">
+                <form action="" method="get" class="form">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                    style="height: 40px; width: 500px"
+                  />
+                  <button class="btn btn-outline-success" type="submit">
+                    <img src="./assets/icon/logo.svg" alt="" width="20px" />
+                  </button>
+                </form>
+              </div>
+            </nav>
+          </div>
+          <div class="dang-nhap-dang-ky-gio-hang">
+            <div class="dang-nhap-dang-ky">
+              <div class="ava-dang-nhap">
+                <img src="./assets/icon/user.png" alt="avatar" width="20px" />
+              </div>
+              <div class="dang-nhap-ky">
+                <a href="#" title="Đăng nhập">Đăng nhập</a>
+                <span>/</span>
+                <a href="#" title="Đăng ký">Đăng ký</a>
+              </div>
+            </div>
+            <div class="gio-hang">
+              <img
+                src="./assets/icon/shopping-bag.png"
+                alt="giỏ hàng"
+                width="20px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="dieu-huong">
+      <div class="main-content">
+        <div class="danh-sach">
+          <ul>
+            <li class="active">
+              <a href="#">Trang chủ</a>
+            </li>
+            <li>
+              <a href="#">Giới thiệu</a>
+            </li>
+            <li class="active">
+              <a href="#">Sản phẩm</a>
+            </li>
+            <li>
+              <a href="#">Tin tức</a>
+            </li>
+            <li class="active">
+              <a href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- main -->
+    <main>
+      <!-- Left menu -->
+      <div class="left-menu" style="height: 1000px">
+        <div
+          class="fixed"
+          style="margin-left: 20px; display: flex; flex-direction: column"
+        >
+          <nav
+            class="navigation"
+            role="navigation"
+            aria-label="Primary Navigation"
+          >
+            <ul id="mainMenu" class="nav-main nav-main-menu">
+              <li class="static-menu level0">
+                <a href="#" class="level0"><span>BỘ SƯU TẬP</span></a>
+              </li>
+              <li class="static-menu level0">
+                <a href="#" class="level0"><span>SHOP THE LOOK</span></a>
+              </li>
+              <li class="category-menu level0 dropdown">
+                <a
+                  href="#"
+                  class="level0 dropdown-toggle"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span data-hover="THỜI TRANG NỮ">THỜI TRANG NỮ</span>
+                  <span class="icon-next">
+                    <i class="fa fa-angle-down"></i>
+                  </span>
+                </a>
+                <ul class="dropdown-menu" id="mobile-menu-7-1">
+                  <li class="level1"><a href="#">Đầm</a></li>
+                  <li class="level1"><a href="#">Áo</a></li>
+                  <li class="level1"><a href="#">Chân Váy</a></li>
+                  <li class="level1"><a href="#">Quần</a></li>
+                </ul>
+              </li>
+              <li class="category-menu level0 dropdown">
+                <a
+                  href="#"
+                  class="level0 dropdown-toggle"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span data-hover="PHỤ KIỆN">PHỤ KIỆN</span>
+                  <span class="icon-next">
+                    <i class="fa fa-angle-down"></i>
+                  </span>
+                </a>
+                <ul class="dropdown-menu" id="mobile-menu-22-1">
+                  <li class="level1"><a href="#">Giày / Dép</a></li>
+                  <li class="level1"><a href="#">Túi</a></li>
+                  <li class="level1"><a href="#">Phụ Kiện</a></li>
+                </ul>
+              </li>
+              <li class="category-menu level0 dropdown">
+                <a
+                  href="#"
+                  class="level0 dropdown-toggle"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span data-hover="SALE UP TO 50%">SALE UP TO 50%</span>
+                  <span class="icon-next"
+                    ><i class="fa fa-angle-down"></i
+                  ></span>
+                </a>
+                <ul class="dropdown-menu" id="mobile-menu-18-1">
+                  <li class="level1"><a href="#">Đầm</a></li>
+                  <li class="level1"><a href="#">Chân Váy</a></li>
+                  <li class="level1"><a href="#">Áo</a></li>
+                  <li class="level1"><a href="#">Quần</a></li>
+                </ul>
+              </li>
+              <li class="static-menu level0">
+                <a href="#" class="level0"><span>Elise Story</span></a>
+              </li>
+              <li class="static-menu level0">
+                <a href="#" class="level0"><span>Thẻ thành viên</span></a>
+              </li>
+              <li class="static-menu level0">
+                <a href="#" class="level0"><span>HỆ THỐNG CỬA HÀNG</span></a>
+              </li>
+              <li class="category-menu level0 dropdown">
+                <a
+                  href="#"
+                  class="level0 dropdown-toggle"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <span>THÔNG TIN</span>
+                  <span class="icon-next">
+                    <i class="fa fa-angle-down"></i>
+                  </span>
+                </a>
+                <ul class="dropdown-menu" id="mobile-menu-31-1">
+                  <li class="level1"><a href="#">ĐĂNG KÝ NHẬN TIN</a></li>
+                  <li class="level1">
+                    <a href="#">ELISE FASHION & LIFESTYLES</a>
+                  </li>
+                  <li class="level1"><a href="#">TUYỂN DỤNG</a></li>
+                  <li class="level1"><a href="#">TRỢ GIÚP</a></li>
+                  <li class="level1"><a href="#">GIỚI THIỆU</a></li>
+                  <li class="level1">
+                    <a href="#">CHÚC MỪNG SINH NHẬT KHÁCH HÀNG</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="static-menu level0">
+                <a href="#" class="level0"><span>ESG ACTIVITES</span></a>
+              </li>
+              <li class="static-menu level0">
+                <a href="#" class="level0"><span>MAY ĐO ĐỒNG PHỤC</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="noi-dung">123</div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="main-content">
+        <div class="row">
+          <!-- column 1 -->
+          <div class="column">
+            <img src="./assets/img/logo-w.svg" alt="Lesson" class="logo" />
+            <p class="desc">
+              Need to help for your dream Career? trust us. With Lesson, study
+              becomes a lot easier with us.
+            </p>
+            <div class="socials">
+              <a href="#!">
+                <img
+                  src="./assets/icon/twitter.svg"
+                  alt="twitter"
+                  class="icon"
+                />
+              </a>
+              <a href="#!">
+                <img src="./assets/icon/fb.svg" alt="facebook" class="icon" />
+              </a>
+              <a href="#!">
+                <img
+                  src="./assets/icon/linkedin.svg"
+                  alt="linkedin"
+                  class="icon"
+                />
+              </a>
+              <a href="#!">
+                <img
+                  src="./assets/icon/instagram.svg"
+                  alt="instagram"
+                  class="icon"
+                />
+              </a>
+            </div>
+          </div>
+
+          <!-- column 2 -->
+          <div class="column">
+            <h3 class="title">Company</h3>
+            <ul class="list">
+              <li>
+                <a href="#!">About Us</a>
+              </li>
+              <li>
+                <a href="#!">Features</a>
+              </li>
+              <li>
+                <a href="#!">Our Pricing</a>
+              </li>
+              <li>
+                <a href="#!">Latest News</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- column 3 -->
+          <div class="column">
+            <h3 class="title">Support</h3>
+            <ul class="list">
+              <li>
+                <a href="#!">FAQ’s</a>
+              </li>
+              <li>
+                <a href="#!">Terms & Conditions</a>
+              </li>
+              <li>
+                <a href="#!">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#!">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- column 4 -->
+          <div class="column">
+            <h3 class="title">Address</h3>
+            <ul class="list">
+              <li>
+                <a href="#!"
+                  ><strong>Location:</strong> 27 Division St, New York, NY
+                  10002, USA</a
+                >
+              </li>
+              <li>
+                <a href="#!"><strong>Email:</strong> email@gmail.com</a>
+              </li>
+              <li>
+                <a href="#!"><strong>Phone:</strong> + 000 1234 567 890</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>Copyright ©2022 webdesign.gdn All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
