@@ -136,7 +136,6 @@ a {
 
 /* =============== dưới header ================= */
 .dieu-huong {
-  margin-top: 20px;
   height: 60px;
   background-color: #fffaf0;
 }
@@ -256,7 +255,7 @@ main::after {
 .sale1,
 .discounted-goods1 {
   display: flex;
-  height: 500px;
+  flex-wrap: wrap;
 }
 
 .new-arrivals1 > div,
@@ -267,15 +266,8 @@ main::after {
   height: 338px;
   width: 190px;
   background: aqua;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   border: 1px solid black;
-}
-
-.new-arrivals1 > div:first-of-type,
-.new-products1 > div:first-of-type,
-.sale1 > div:first-of-type,
-.discounted-goods1 > div:first-of-type {
-  margin-left: 10px;
 }
 
 /* test */
