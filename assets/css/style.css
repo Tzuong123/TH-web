@@ -187,11 +187,11 @@ main {
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  background: #f5f5f5;
 }
 
 .left-menu {
   width: 20%;
-  background: aqua;
   float: left;
 }
 
@@ -232,8 +232,7 @@ main::after {
 
 /* =============== noi dung ================= */
 .noi-dung {
-  height: 5000px;
-  background: #a40202;
+  display: block;
 }
 
 .can-tren-duoi {
@@ -258,14 +257,6 @@ main::after {
 .discounted-goods1 {
   display: flex;
   height: 500px;
-  background: #123456;
-}
-
-.new-arrivals,
-.new-products,
-.sale,
-.discounted-goods {
-  background: #ae910e;
 }
 
 .new-arrivals1 > div,
@@ -354,7 +345,7 @@ main::after {
   max-width: 267px;
   color: #bfbcb2;
   font-size: 1.4rem;
-  line-height: 1.86; /* 185.714% */
+  line-height: 1.86;
 }
 
 .footer .socials {
@@ -371,7 +362,7 @@ main::after {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
-  line-height: 1.75; /* 175% */
+  line-height: 1.75;
 }
 
 .footer .list {
@@ -383,7 +374,7 @@ main::after {
   margin-bottom: 12px;
   color: #bfbcb2;
   font-size: 1.4rem;
-  line-height: 1.86; /* 185.714% */
+  line-height: 1.86;
 }
 
 .footer .list li:last-child a {
@@ -394,7 +385,7 @@ main::after {
   color: #fff;
   font-size: 1.4rem;
   font-weight: 600;
-  line-height: 1.86; /* 185.714%*/
+  line-height: 1.86;
 }
 
 .footer .copyright {
@@ -402,5 +393,5 @@ main::after {
   color: #807d74;
   text-align: center;
   font-size: 1.4rem;
-  line-height: 1.86; /* 185.714% */
+  line-height: 1.86;
 }
