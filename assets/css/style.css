@@ -28,6 +28,15 @@ a {
   margin-right: auto;
 }
 
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
 .btn {
   display: inline-block;
   color: #fff;
@@ -204,6 +213,119 @@ main::after {
   padding: 20px 0px 0px 0px;
 }
 
+.nav-trai {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.level0 {
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+
+.level1 a {
+  color: #106694;
+  font-size: 1.6rem;
+}
+
+/* =============== noi dung ================= */
+.noi-dung {
+  height: 5000px;
+}
+
+.new-arrivals {
+  background: #ae910e;
+}
+
+.new-arrivals1 {
+  display: flex;
+  height: 500px;
+  background: #123456;
+}
+
+.new-arrivals1 > div {
+  margin-top: 10px;
+  height: 338px;
+  width: 190px;
+  background: aqua;
+  flex-shrink: 0;
+  border: 1px solid black;
+}
+
+.new-arrivals1 > div:first-of-type {
+  margin-left: 10px;
+}
+
+.new-products {
+  background: #ae910e;
+}
+
+.new-products1 {
+  display: flex;
+  height: 500px;
+  background: #123456;
+}
+
+.new-products1 > div {
+  margin-top: 10px;
+  height: 338px;
+  width: 190px;
+  background: aqua;
+  flex-shrink: 0;
+  border: 1px solid black;
+}
+
+.new-products1 > div:first-of-type {
+  margin-left: 10px;
+}
+
+.sale {
+  background: #ae910e;
+}
+
+.sale1 {
+  display: flex;
+  height: 500px;
+  background: #123456;
+}
+
+.sale1 > div {
+  margin-top: 10px;
+  height: 338px;
+  width: 190px;
+  background: aqua;
+  flex-shrink: 0;
+  border: 1px solid black;
+}
+
+.sale1 > div:first-of-type {
+  margin-left: 10px;
+}
+
+.discounted-goods {
+  background: #ae910e;
+}
+
+.discounted-goods1 {
+  display: flex;
+  height: 500px;
+  background: #123456;
+}
+
+.discounted-goods1 > div {
+  margin-top: 10px;
+  height: 338px;
+  width: 190px;
+  background: aqua;
+  flex-shrink: 0;
+  border: 1px solid black;
+}
+
+.discounted-goods1 > div:first-of-type {
+  margin-left: 10px;
+}
 /* =============== Footer ================= */
 .footer {
   background: #2e2100;
