@@ -1,0 +1,44 @@
+/* =============== dưới header ================= */
+.dieu-huong {
+  height: 60px;
+  background-color: #fffaf0;
+}
+
+.danh-sach ul {
+  display: flex;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+  position: relative;
+}
+
+.danh-sach ul li {
+  padding: 8px 21px;
+}
+
+.danh-sach a {
+  color: #000000;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+.danh-sach li.active a,
+.danh-sach a:hover {
+  color: var(--primary-color);
+}
+
+.danh-sach li.active a::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -5px;
+  display: block;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background: var(--primary-color);
+}
+
+.active {
+  color: var(--primary-color);
+}
