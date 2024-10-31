@@ -24,3 +24,10 @@
   border-radius: 999px;
   background: #171100;
 }
+
+@media (max-width: 480px) {
+  .main-content {
+    width: 100vw;
+    margin: 0;
+  }
+}

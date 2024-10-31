@@ -4,6 +4,10 @@
   background-color: #fffaf0;
 }
 
+.danh-sach{
+  padding: 10px 160px;
+}
+
 .danh-sach ul {
   display: flex;
   color: #5f5b53;

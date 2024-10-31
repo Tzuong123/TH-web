@@ -126,10 +126,10 @@
     <!-- Điều hướng -->
     <div class="dieu-huong">
       <div class="main-content">
-        <div class="danh-sach" style="margin-left: 160px">
+        <div class="danh-sach">
           <ul>
             <li>
-              <a href="./trangchu.html">Trang chủ</a>
+              <a href="./index.html">Trang chủ</a>
             </li>
             <li>
               <a href="#">Giới thiệu</a>
@@ -151,7 +151,65 @@
     <!-- main -->
     <main>
       <!-- nội dung -->
-      <div class="main-content"></div>
+      <div class="bread-crumb">
+        <div class="main-content">
+          <ul class="horizontal-menu">
+            <li>
+              <a href="./index.html">Trang chủ</a>
+            </li>
+            <li>></li>
+            <li>
+              <a href="#">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="layout-contact">
+        <div class="main-content">
+          <div class="row">
+            <div class="ben-trai">
+              <div class="contact">
+                <h4>Trường đại học kinh tế - kỹ thuật Công nghiệp Hà Nội</h4>
+                <div>
+                  <div>Địa chỉ:</div>
+                  <div>Email:</div>
+                  <div>Hotline:</div>
+                </div>
+              </div>
+              <div class="form-contact">
+                <h4>Liên hệ với chúng tôi</h4>
+                <div class="pagelogin">
+                  <form action="" method="post">
+                    <div class="group_contact">
+                      <input placeholder="Họ và tên" type="text" class="" required="" id="name" name="contact[Name]">
+
+                      <input placeholder="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" id="email1" class="" name="contact[email]">
+
+                      <input type="number" placeholder="Điện thoại*" name="contact[phone]" id="phone" class="" required="">
+
+                      <textarea placeholder="Nội dung" name="contact[body]" id="comment" class="content-area" rows="5" required=""></textarea>
+            
+                      <button type="submit" class="btn-lienhe">Gửi thông tin</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            
+            <div class="ben-phai">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7450.432466018942!2d105.87479176313802!3d20.983967630810966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135afd765487289%3A0x21bd5839ba683d5f!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gS-G7uSBUaHXhuq10IEPDtG5nIE5naGnhu4dw!5e0!3m2!1svi!2s!4v1730403784075!5m2!1svi!2s"
+                width="540"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <!-- footer -->
