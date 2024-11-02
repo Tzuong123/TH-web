@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./assets/css/csschung/styleheader.css" />
     <link rel="stylesheet" href="./assets/css/csschung/styleduoiheader.css" />
     <link rel="stylesheet" href="./assets/css/csschung/stylefooter.css" />
-    <link rel="stylesheet" href="./assets/css/cssrieng/stylelienhe.css" />
+    <link rel="stylesheet" href="./assets/css/cssrieng/stylegiohang.css" />
     <!-- icon style -->
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Liên hệ</title>
+    <title>Giỏ hàng</title>
   </head>
   <body>
     <!-- header -->
@@ -112,7 +112,7 @@
               </div>
             </div>
             <div class="shopping-cart">
-              <a href="giohang.html">
+              <a href="#">
                 <img
                   src="./assets/icon/shopping-bag.png"
                   alt="Shopping Cart"
@@ -142,8 +142,8 @@
             <li>
               <a href="#">Tin tức</a>
             </li>
-            <li class="active">
-              <a href="#">Liên hệ</a>
+            <li>
+              <a href="./lienhe.html">Liên hệ</a>
             </li>
           </ul>
         </div>
@@ -161,55 +161,135 @@
             </li>
             <li>></li>
             <li>
-              <a href="#">Liên hệ</a>
+              <a href="#">Giỏ hàng</a>
             </li>
           </ul>
         </div>
       </section>
 
-      <section class="layout-contact">
-        <div class="main-content">
-          <div class="row">
-            <div class="ben-trai">
-              <div class="contact">
-                <h4>Trường đại học kinh tế - kỹ thuật Công nghiệp Hà Nội</h4>
-                <div>
-                  <div>Địa chỉ:</div>
-                  <div>Email:</div>
-                  <div>Hotline:</div>
-                </div>
+      <section class="main-cart-page main-content">
+        <div class="container cart-container">
+          <div class="cart-content">
+            <form action="" method="post" class="cart-form">
+              <div class="cart-header">
+                <div>Thông tin sản phẩm</div>
+                <div>Đơn giá</div>
+                <div>Số lượng</div>
+                <div>Thành tiền</div>
               </div>
-              <div class="form-contact">
-                <h4>Liên hệ với chúng tôi</h4>
-                <div class="pagelogin">
-                  <form action="" method="post">
-                    <div class="group_contact">
-                      <input placeholder="Họ và tên" type="text" class="" required="" id="name" name="contact[Name]">
 
-                      <input placeholder="Email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required="" id="email1" class="" name="contact[email]">
-
-                      <input type="number" placeholder="Điện thoại*" name="contact[phone]" id="phone" class="" required="">
-
-                      <textarea placeholder="Nội dung" name="contact[body]" id="comment" class="content-area" rows="5" required=""></textarea>
-            
-                      <button type="submit" class="btn-lienhe">Gửi thông tin</button>
+              <!-- Sản phẩm mẫu trong giỏ hàng -->
+              <div class="cart-item">
+                <div class="dd">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./assets/icon/shopping-bag.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-name-wrap">
+                      <a href="#" class="product-name">Áo Thun Nam</a>
                     </div>
-                  </form>
+                    <div class="grid">
+                      <div class="product-price" data-price="75000">
+                        75.000₫
+                      </div>
+                    </div>
+                    <div class="grid">
+                      <div class="product-quantity">
+                        <button type="button" onclick="decrease()">-</button>
+                        <input
+                          type="text"
+                          id="quantity"
+                          maxlength="3"
+                          min="1"
+                          value="1"
+                          class="quantity-input"
+                          onchange="updateCart()"
+                        />
+                        <button type="button" onclick="increase()">+</button>
+                      </div>
+                    </div>
+                    <div class="grid">
+                      <div class="product-total">75.000₫</div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            
-            <div class="ben-phai">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7450.432466018942!2d105.87479176313802!3d20.983967630810966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135afd765487289%3A0x21bd5839ba683d5f!2zVHLGsOG7nW5nIMSQ4bqhaSBI4buNYyBLaW5oIFThur8gS-G7uSBUaHXhuq10IEPDtG5nIE5naGnhu4dw!5e0!3m2!1svi!2s!4v1730403784075!5m2!1svi!2s"
-                width="540"
-                height="450"
-                style="border: 0"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
+
+              <div class="cart-item">
+                <div class="dd">
+                  <div class="product-img">
+                    <a href="#">
+                      <img src="./assets/icon/shopping-bag.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="product-info">
+                    <div class="product-name-wrap">
+                      <a href="#" class="product-name">Quần Jean</a>
+                    </div>
+                    <div class="grid">
+                      <div class="product-price" data-price="125000">
+                        125.000₫
+                      </div>
+                    </div>
+                    <div class="grid">
+                      <div class="product-quantity">
+                        <button type="button" onclick="decrease()">-</button>
+                        <input
+                          type="text"
+                          id="quantity"
+                          maxlength="3"
+                          min="1"
+                          value="1"
+                          class="quantity-input"
+                          onchange="updateCart()"
+                        />
+                        <button type="button" onclick="increase()">+</button>
+                      </div>
+                    </div>
+                    <div class="grid">
+                      <div class="product-total">125.000₫</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cart-item">
+                <div class="product-img">
+                  <a href="#">
+                    <img src="./assets/icon/shopping-bag.png" alt="" />
+                  </a>
+                </div>
+                <div class="product-info">Quần Jean</div>
+                <div class="product-price" data-price="125000">125.000₫</div>
+                <div class="product-quantity">
+                  <input
+                    type="number"
+                    value="1"
+                    min="1"
+                    class="quantity-input"
+                    onchange="updateCart()"
+                  />
+                </div>
+                <div class="product-total">125.000₫</div>
+              </div>
+
+              <!-- Tổng tiền và nút thanh toán -->
+              <div class="cart-footer">
+                <div class="cart-total">
+                  <span>Tổng cộng:</span>
+                  <span class="total-price">200.000₫</span>
+                </div>
+                <button
+                  onclick="location.href='/checkout'"
+                  type="button"
+                  class="btn-checkout"
+                >
+                  Thanh toán
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
@@ -342,6 +422,48 @@
           });
         }
       });
+    </script>
+
+    <script>
+      function updateCart() {
+        const rows = document.querySelectorAll(".cart-item");
+        let total = 0;
+
+        rows.forEach((row) => {
+          const price = parseInt(
+            row.querySelector(".product-price").dataset.price,
+            10
+          );
+          const quantity = parseInt(
+            row.querySelector(".quantity-input").value,
+            10
+          );
+          const productTotal = price * quantity;
+
+          row.querySelector(".product-total").textContent =
+            productTotal.toLocaleString("vi-VN") + "₫";
+          total += productTotal;
+        });
+
+        document.querySelector(".total-price").textContent =
+          total.toLocaleString("vi-VN") + "₫";
+      }
+
+      function decrease() {
+        const quantityInput = document.getElementById("quantity");
+        let quantity = parseInt(quantityInput.value);
+        if (quantity > 1) {
+          quantity--;
+          quantityInput.value = quantity;
+        }
+      }
+
+      function increase() {
+        const quantityInput = document.getElementById("quantity");
+        let quantity = parseInt(quantityInput.value);
+        quantity++;
+        quantityInput.value = quantity;
+      }
     </script>
   </body>
 </html>

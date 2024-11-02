@@ -4,7 +4,7 @@
   background-color: #fffaf0;
 }
 
-.danh-sach{
+.danh-sach {
   padding: 10px 160px;
 }
 
@@ -45,4 +45,27 @@
 
 .active {
   color: var(--primary-color);
+}
+
+/* =============== Thanh chỉ đường dẫn ================= */
+.horizontal-menu {
+  display: flex;
+  padding: 35px 200px;
+}
+
+.horizontal-menu li {
+  margin-right: 10px;
+}
+
+.horizontal-menu li:first-of-type {
+  margin-right: 10px;
+  width: 77px;
+}
+
+.horizontal-menu li a {
+  color: #1c5b41;
+}
+
+.horizontal-menu li a:hover {
+  font-weight: bold;
 }
